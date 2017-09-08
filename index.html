@@ -6,7 +6,6 @@
 	<link rel="stylesheet" href="jquery.gettab.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="scripts.js"></script>
 	<script src="jquery.gettab.js"></script>
 </head>
 <body>
@@ -15,6 +14,10 @@
 
 <script type="text/javascript">
 $(function(){
-	
+	var tab = new getTab([
+		{title: "Client info", content: "Client Info Content"},
+		{title: "Transactions", content: "Transaction list"}
+	]);
+	$("body").append(tab.getElement());
 });
 </script>
