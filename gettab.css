@@ -1,0 +1,90 @@
+/*--- Btn start-*/
+.btn{
+    border: 0;
+    height: 40px;
+    font-size: 13px;
+    padding: 0 20px;
+
+    color: #777;
+    background-color: #fff;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+.btn.inactive{
+    display: none;
+}
+
+.btn.btn-default{
+    background-color: #fff;
+    border: 1px solid #dedfe0;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.08);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.08);
+}
+
+.btn.btn-default:hover{
+    border-color: #bcc5cf;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12), 0 2px 10px 0 rgba(0,0,0,0.08);
+}
+
+.btn:active{
+    color: #666;
+    background-color: #eff4f7;
+}
+
+.btn.is-active,
+.btn:hover{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12), 0 2px 10px 0 rgba(0,0,0,0.08);
+}
+/*--- Btn end-*/
+
+
+
+
+
+/*--- Tab start-*/
+.tab-t__item{
+    height: 40px;
+    padding: 0 15px;
+    
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0 0 0 0;
+    position: relative;
+}
+
+.tab-t__item:first-child{
+    border-radius: 4px 0 0 0;
+}
+
+.tab-t__item:last-child{
+    border-radius: 0 4px 0 0;
+}
+
+.tab-t__item.is-active{
+    cursor: default;
+}
+
+.tab-t__item:hover{
+    z-index: 1;
+}
+
+.tab-t__item.is-active{
+    z-index: 2;
+}
+
+.tab-t__content{
+    display: none;
+}
+
+.tab-t__content.open{
+    display: block;
+}
+/*--- Tab end-*/
