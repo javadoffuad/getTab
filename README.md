@@ -1,2 +1,2 @@
 # getTab
-Simple tab element
+Simple tab component
